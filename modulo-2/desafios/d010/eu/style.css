@@ -1,0 +1,173 @@
+/* Tudo isso feito antes de ver o capítulo 17 do Guanabara! Tem problemas, mas foi o que consegui fazer sozinho! */
+
+@charset "UTF-8";
+@font-face {
+    font-family: 'Droid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+body {
+    background-color: #84E1AD;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-image: linear-gradient(to bottom, #3CD983, #1B6139);
+    height: 150px;
+    text-align: center;
+}
+
+header > h1 {
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 40px 0 0;
+}
+
+header > h2 {
+    color: white;
+    font-size: 1em;
+    font-weight: normal;
+    padding: 10px 0 0 0;
+}
+
+header > h1, header > h2 {
+    text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Menu */
+nav {
+    background-color: #1B6139;
+    padding: 8px 12px;
+}
+
+nav > li {
+    font-size: 1em;
+}
+
+nav > a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 0 5px rgba(0, 0, 0, 0.5);
+    padding-right: 15px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo */
+main {
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.412);
+    margin: 0 300px;
+    padding: 15px;
+}
+
+main > h1, main > h2 {
+    font-family: 'Droid';
+}
+
+main > h2 {
+    background-image: linear-gradient(to right, #DCF3E6 70%, transparent);
+    padding: 0 7px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+p > a {
+    color: #306B4C;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p > a::after {
+    content: ' 🔗';
+}
+
+strong {
+    color: #306B4C; 
+}
+
+h1, h2 {
+    color: #306B4C;
+    margin: 0;
+}
+
+picture > img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+#yt-video {
+    background-color: #1A5C38;
+    padding: 18px 30px;
+    margin: 0 -15px;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+/* Extra */
+aside {
+    background-color: #C5EBD6;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 0 0 10px 0;
+}
+
+aside > h2 {
+    background-color: #2FA866;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    font-size: 1em;
+    padding: 7px;
+}
+
+aside > p {
+    padding: 0 10px;
+}
+
+aside > ul {
+    display: inline-block;
+    list-style-type: '✔ ';
+    list-style: symbols();
+    margin: 0;
+}
+
+.android-ver-names {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1A5C38;
+}
+
+footer > p {
+    color: white;
+    margin-bottom: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+footer > p strong {
+    color: white;
+}
