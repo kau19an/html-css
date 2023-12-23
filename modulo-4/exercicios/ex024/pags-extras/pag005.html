@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            background-color: lightgrey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="clicou()">Clique em mim</a>
+    <div id="saida"></div>
+
+    <!-- E ele finalmente apareceu... JavaScript! -->
+    <script>
+        function clicou() {                               // Declara a função 'clicou', dando a ela os comandos:
+            s = window.document.getElementById("saida")  // 1. Busca por um elemento de id 'saida', selecionando-o;
+            s.innerHTML += '<p>Para de me cutucar!</p>' // 2. Modifica o HTML para que, toda vez que a âncora for
+                                                       // clicada, será adicionado esse parágrafo dentro da <div>.
+        }
+    </script>
+
+    <!-- Curiosidade: essa é a primeira página feita até então que inclui todo o front-end: HTML, CSS e JavaScript! -->
+</body>
+</html>
