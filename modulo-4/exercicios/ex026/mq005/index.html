@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <title>Media query</title>
+</head>
+<body onresize="changedSize()">
+    <header>
+        <h1>Meu site</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <li><a href="#">Opção 1</a></li>
+            <li><a href="#">Opção 2</a></li>
+            <li><a href="#">Opção 3</a></li>
+            <li><a href="#">Opção 4</a></li>
+            <li><a href="#">Opção 5</a></li>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media queries</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus beatae neque sint dolor distinctio voluptatum ducimus, id doloremque ad molestias accusamus assumenda natus eligendi dolorem veniam enim deleniti debitis aperiam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, reprehenderit ducimus! Illo dolorum illum corporis adipisci at architecto id rem voluptas, vero veritatis ullam repellendus dolore corrupti minus dolores eaque?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab dolorem ad repellendus sint, adipisci, voluptates minima deserunt ipsam fugiat laboriosam nesciunt perferendis itaque maiores dolor harum voluptate aperiam architecto excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, fugiat ut sapiente itaque vitae nam accusantium ex molestiae repellendus doloribus vel a, numquam adipisci rerum quasi! Nam explicabo possimus fuga. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem ea iusto harum recusandae in velit assumenda corrupti voluptas distinctio incidunt, officiis repudiandae, sapiente quo soluta sit omnis commodi molestias reprehenderit.</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto eos et accusantium exercitationem totam reprehenderit assumenda maiores nihil corporis neque, repudiandae aliquam! Accusantium provident exercitationem obcaecati culpa omnis est natus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis ipsum quibusdam repellat voluptatibus consequuntur eaque, officia quas placeat soluta vero praesentium nulla porro reprehenderit itaque hic? Recusandae iure molestias ipsa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cupiditate ullam dolorem vero magnam quidem deleniti alias deserunt, aut dolor quod minus sequi? Iste rerum obcaecati amet alias sequi facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus est inventore reiciendis ex! Quidem adipisci soluta, consequuntur illo temporibus quisquam, alias nam fugit reprehenderit fugiat quo assumenda quam, non accusamus.</p>
+        </article>
+    </main>
+
+    <script>
+        function clickMenu() {                      // Quando o ícone de menu for clicado:
+            if (itens.style.display == 'block') {  // Se o menu estiver à mostra,
+                itens.style.display = 'none'      // deixe de mostrá-lo.
+            } else {                             // Senão,
+                itens.style.display = 'block'   // mostre-o.
+            }
+        }
+
+        function changedSize() {
+            if (window.innerWidth >= 768) {     // Se a tela for maior ou igual que 768px,
+                itens.style.display = 'block'  // então o menu aparecerá.
+            } else {                          // Senão,
+                itens.style.display = 'none' // não aparecerá.
+            }
+        }
+    </script>
+</body>
+</html>
