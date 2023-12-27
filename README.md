@@ -6,6 +6,6 @@ Este é um repositório para fins estudantis contendo todos os exercícios e des
 * ✔️ **CONCLUÍDO** → Módulo 2: Deixando as coisas mais bonitas
 * ✔️ **CONCLUÍDO** → Módulo 3: Colocando um protótipo no ar
 * ✔️ **CONCLUÍDO** → Módulo 4: Aprofundando os conhecimentos
-* 🚧 **EM ANDAMENTO** → Módulo 5: Novas tecnologias
+* ⏸ **AGUARDANDO LANÇAMENTO** → Módulo 5: Novas tecnologias
 
 > Créditos ao [Gustavo Guanabara](https://github.com/gustavoguanabara) por tornar isso possível.
